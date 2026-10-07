@@ -1,0 +1,15 @@
+{
+  // Página institucional da Saviski Tecnologia da Informação LTDA.
+  // Só arquivos estáticos: não há script de Worker.
+  "name": "saviski-dev",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  // Rota (e não custom domain) de propósito: não mexe no DNS do apex nem nos
+  // registros de e-mail; os outros subdomínios de saviski.dev ficam como estão.
+  "routes": [
+    { "pattern": "saviski.dev/*", "zone_name": "saviski.dev" }
+  ]
+}
